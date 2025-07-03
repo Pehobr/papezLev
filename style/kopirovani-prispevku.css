@@ -1,0 +1,27 @@
+/* Styly pro funkci kopírování příspěvku */
+
+/* Kontejner pro ikonu, který se vkládá do odstavce */
+.jcp-icon-container {
+    float: right; /* Klíčové: Zarovnání vpravo, text bude obtékat */
+    margin-left: 15px; /* Mezera mezi ikonou a textem vlevo od ní */
+    margin-bottom: 5px; /* Malá mezera pod ikonou, pokud by byl text krátký */
+}
+
+/* Styl a pozice samotné ikony uvnitř odkazu */
+.jcp-copy-icon {
+    font-size: 20px;
+    cursor: pointer;
+    color: #870e2c; /* Požadovaná barva */
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: block;
+}
+
+.jcp-copy-icon:hover {
+    color: #000;
+    transform: scale(1.1);
+}
+
+/* Zelená "fajfka" pro potvrzení zkopírování */
+.jcp-copy-icon .fa-check {
+    color: #28a745;
+}

@@ -1,0 +1,68 @@
+/*
+Theme Name: MinimalistBlogger Child
+Theme URI: https://superbthemes.com/minimalistblogger/minimalistblogger-info/
+Template: minimalistblogger
+Author: ThemeEverest
+Author URI: http://superbthemes.com/
+Description: MinimalistBlogger is a responsive WordPress blog and news theme made for bloggers and newspapers. Its elegant and minimalistic look makes it an attractive theme for writers who wish to write about their view on food, fashion, travel, clothing, movies, or their lifestyle in general. Minimalistblogger is of course modern in the ways that it is both fast and search engine optimized (SEO friendly) as a theme should be nowadays. The sidebar allows widgets, Adsense affiliate links, or whatever else you wish to put there. Installing and setting up the theme is simple for any author, we have tried to optimise the user friendliness by making the interface clean and so it is as easy as possible to set up and start using. If the business aspect is important for you, for example, if you are using it as a newspaper or personal writing/journalist portfolio then it's great since your website is able to rank everywhere on the internet with our theme, for example in Yahoo, Bing or Google.
+Tags: theme-options,threaded-comments,translation-ready,sticky-post,footer-widgets,custom-background,custom-colors,custom-header,custom-logo,custom-menu,featured-image-header,featured-images,flexible-header,right-sidebar,one-column,two-columns,news,entertainment,blog
+Version: 8.0.1748838899
+Updated: 2025-06-02 06:34:59
+
+*/
+
+/* ==========================================================================
+   STYLY PRO TLAČÍTKA STRÁNKOVÁNÍ (PAGINACE) - SPECIFICKÁ VERZE
+   ========================================================================== */
+
+/* 1. Základní kontejner pro stránkování */
+.text-center .page-numbers {
+    padding: 0;
+    margin: 0;
+    list-style: none; /* Odstraní odrážky, pokud by se objevily */
+}
+
+/* 2. Společný styl pro všechny položky (aby byly v řadě) */
+.text-center .page-numbers li {
+    display: inline;
+}
+
+/* 3. Vzhled pro odkazy na stránky (včetně "Next") */
+.text-center .page-numbers a.page-numbers {
+    display: inline-block;
+    padding: 8px 15px;
+    margin: 2px;
+    background-color: #870e2c; /* Vaše červená barva */
+    color: #ffffff !important; /* Bílý text */
+    border: 2px solid #870e2c;
+    border-radius: 7px;
+    font-weight: bold;
+    text-decoration: none !important;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* 4. Vzhled odkazu při najetí myší */
+.text-center .page-numbers a.page-numbers:hover {
+    background-color: #6d0b23; /* Tmavší červená */
+    border-color: #6d0b23;
+}
+
+/* 5. Vzhled tlačítka aktuální stránky (inverzní styl) */
+.text-center .page-numbers span.current {
+    display: inline-block;
+    padding: 8px 15px;
+    margin: 2px;
+    background-color: #ffffff; /* Bílý podklad */
+    color: #870e2c !important; /* Červený text */
+    border: 2px solid #870e2c; /* Červený rámeček */
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+/* 6. Vzhled pro tečky (...) */
+.text-center .page-numbers span.dots {
+    padding: 8px 5px;
+    border: none;
+    background: none;
+    color: #870e2c;
+}
